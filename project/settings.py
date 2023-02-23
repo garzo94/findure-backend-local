@@ -30,6 +30,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['web-production-a31d.up.railway.app','127.0.0.1']
 
 
+
 # Application definition
 
 INSTALLED_APPS = [
