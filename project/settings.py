@@ -22,11 +22,12 @@ import os
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = config('SECRET_KEY')
-CSRF_TRUSTED_ORIGINS = ['https://findgure.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['https://web-production-a31d.up.railway.app']
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['findgure.up.railway.app','127.0.0.1']
+ALLOWED_HOSTS = ['web-production-a31d.up.railway.app','127.0.0.1']
 
 
 # Application definition
@@ -99,8 +100,8 @@ DATABASES = {
         'NAME': 'railway',
         'USER': 'postgres',
         'PASSWORD': config('PASSWORD'),
-        'HOST': 'containers-us-west-164.railway.app',
-        'PORT': '7053',
+        'HOST': 'containers-us-west-171.railway.app',
+        'PORT': '7893',
     }
 }
 
