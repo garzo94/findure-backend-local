@@ -1,5 +1,5 @@
 from django.urls import path, include
-from .views import SignUpView, LoginView, ProductViewSet
+from .views import SignUpView, LoginView, ProductViewSet, CategoryViewSet
 from rest_framework import routers
 
 router = routers.DefaultRouter()

@@ -5,7 +5,7 @@ from rest_framework.authtoken.models import Token
 from django.contrib.auth import get_user_model
 from .serializers import UserSerializer, ProductSerializer, CategorySerializer
 from django.contrib.auth import authenticate, login
-from .models import Product
+from .models import Product, Category
 
 User = get_user_model()
 
