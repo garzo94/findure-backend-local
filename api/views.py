@@ -23,8 +23,7 @@ class SignUpView(generics.CreateAPIView):
 
 
 class LoginView(APIView):
-    def post(self, request):
-        
+    def post(self, request):        
         username = request.data.get('username')
         password = request.data.get('password')
 
@@ -34,3 +33,7 @@ class LoginView(APIView):
             return Response({'token': token.key})
         else:
             return Response({'error': 'Invalid login credentials'}, status=status.HTTP_401_UNAUTHORIZED)
+
+class ProductViewSet(viewsets.ModelViewSet):
+    queryset = Product.objects.all()
+    serializer_class = ProductSerializer
