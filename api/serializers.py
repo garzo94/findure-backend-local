@@ -17,7 +17,7 @@ class UserSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = User
-        fields = ('id', 'username', 'email', 'password')
+        fields = ('id', 'username', 'email', 'password',"city","address","postal_code","country")
 
 
 class FranchiseSerializer(serializers.ModelSerializer):

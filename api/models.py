@@ -43,6 +43,12 @@ class CustomUser(auth_models.AbstractUser):
     username = models.CharField(verbose_name="Username",max_length=255)
     email = models.EmailField(verbose_name="Email", max_length=255, unique=True)
     password = models.CharField(max_length=255)
+    address = models.CharField(max_length=255, default="",blank=True)
+    city = models.CharField(max_length=255,default="", blank=True)
+    postal_code = models.IntegerField(default=000)
+    country = models.CharField(max_length=255, default="", blank=True)
+
+
     objects = UserManager()
     USERNAME_FIELD = "email"
     REQUIRED_FIELDS = ["password", "username"]
